@@ -1,0 +1,88 @@
+.logo{
+    margin-right: 28px;
+}
+.header{
+    min-width: 1145px;
+    padding: 13px 0 23px;
+    &__top{
+        margin-bottom: 25px;
+    }
+    &-menu {
+        list-style-type: none;
+        display: flex;
+        a {
+            text-decoration: none;
+            display: block;
+        }
+        li{
+            &:not(:last-child){
+                margin-right: 26px;
+            }
+        }
+        &__drop-item{
+            padding-right: 14px;
+            position: relative;
+            &:after{
+                content: '';
+                width: 7px;
+                height: 7px;
+                border-right: 1px solid $blue;
+                border-bottom: 1px solid $blue;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+    &__bottom{
+        .btn{
+            box-shadow: none;
+            font-size: 18px;
+        }
+    }
+    &__wrap {
+        padding: 0 94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__user-block {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__search, &__user{
+        display: inline-block;
+    }
+    &__search{
+        @include sprite($search);
+    }
+    &__user{
+        margin-left: 18px;
+        @include sprite($user);
+    }
+}
+.contact{
+    &__item{
+        display: flex;
+    }
+    &__icon{
+        display: inline-block;
+        margin-right: 11px;
+    }
+    &__phone{
+        font-size: 16px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #212121;
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

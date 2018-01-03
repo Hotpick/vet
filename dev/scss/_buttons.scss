@@ -1,0 +1,79 @@
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: $medium;
+    color: #fff;
+    height: 51px;
+    position: relative;
+    line-height: 51px;
+    padding: 0 46px 0 87px;
+    background: url(../img/dog_paw.png) 16% 50% no-repeat $blue;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px 0px rgba(40, 80, 162, 0.45);
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($blue, 10%);
+    }
+    &__prev{
+        border: 5px solid $yellow;
+        background: transparent;
+        box-shadow: none;
+        color: $blue;
+        line-height: 41px;
+        padding: 0 34px 0 52px;
+        &:after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $blue;
+            border-bottom: 2px solid $blue;
+            transform: translateY(-50%) rotate(135deg);
+            position: absolute;
+            left: 26px;
+            top: 50%;
+        }
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+    &--r-arrow{
+        background: $blue;
+        padding: 0 57px 0 38px;
+        &:after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $yellow;
+            border-bottom: 2px solid $yellow;
+            transform: translateY(-50%) rotate(-45deg);
+            position: absolute;
+            right: 31px;
+            top: 50%;
+        }
+    }
+    &--l-arrow{
+        font-size: 14px;
+        height: 41px;
+        line-height: 41px;
+        background: $blue;
+        padding: 0 34px 0 42px;
+        &:after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $yellow;
+            border-bottom: 2px solid $yellow;
+            transform: translateY(-50%) rotate(-45deg);
+            position: absolute;
+            left: 21px;
+            top: 50%;
+        }
+    }
+    &.disabled{
+        pointer-events: none;
+        opacity: .6;
+    }
+}

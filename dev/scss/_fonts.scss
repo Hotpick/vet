@@ -1,0 +1,30 @@
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+    $filepath: "fonts/" + $file;
+    @font-face {
+        font-family: quote($style-name);
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
+        url($filepath + ".woff") format('woff'),
+        url($filepath + ".woff") format('woff2'),
+        url($filepath + ".ttf")  format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face('book', 'firasansbook');
+@include font-face('light', 'firasanslight');
+@include font-face('lightitalic', 'firasanslightitalic');
+@include font-face('medium', 'firasansmedium');
+@include font-face('regular', 'firasansregular');
+@include font-face('semibold', 'firasanssemibold');
+@include font-face('bold', 'firasansbold');
+
+$basic: "regular", Arial, sans-serif;
+
+$book: "book", Arial, sans-serif;
+$light: "light", Arial, sans-serif;
+$lightitalic: "lightitalic", Arial, sans-serif;
+$medium: "medium", Arial, sans-serif;
+$semibold: "semibold", Arial, sans-serif;
+$bold: "bold", Arial, sans-serif;

@@ -1,0 +1,46 @@
+.footer{
+    min-width: 1145px;
+    padding: 50px 0 0;
+    background: url(../img/footer-shadow.png) top center no-repeat;
+    &__inner{
+        padding: 0 78px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        li{
+            &:not(:last-child){
+                margin-right: 49px;
+            }
+        }
+        a{
+            display: block;
+        }
+    }
+    &__policy{
+        p{
+            margin-right: 36px;
+        }
+    }
+    &__bot{
+        padding: 48px 78px 15px;
+        display: flex;
+        justify-content: space-between;
+        p, a{
+            display: inline-block;
+            font-family: $book;
+            font-size: 12px;
+        }
+        p{
+            color: #c8c3bb;
+        }
+        a{
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+}

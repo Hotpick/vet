@@ -1,0 +1,43 @@
+*, &:after, &:before{
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: $basic;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.page-wrapper{
+  position: relative;
+  overflow: hidden;
+  min-width: 1175px;
+}
+a{
+  font-size: 14px;
+  color: $blue;
+  text-decoration: none;
+}
+.wrap {
+  position: relative;
+  max-width: 1175px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap-m {
+  position: relative;
+  max-width: 1010px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+h1{
+  font-size: 36px;
+  font-family: $medium;
+  font-weight: normal;
+  color: $blue;
+  margin-bottom: 10px;
+}

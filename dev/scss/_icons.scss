@@ -1,0 +1,80 @@
+.icon{
+    &__cat{
+        @include sprite($cat-clock);
+    }
+    &__dog{
+        @include sprite($dog-phone);
+    }
+    &__lun{
+        @include sprite($lun);
+    }
+    &__bone{
+        @include sprite($bone);
+    }
+    &__micro{
+        @include sprite($micro);
+    }
+    &__tooth{
+        @include sprite($tooth);
+    }
+    &__liver{
+        @include sprite($liver);
+    }
+    &__pillow{
+        @include sprite($pillow);
+    }
+    &__eye{
+        @include sprite($eye);
+    }
+    &__picture{
+        @include sprite($picture);
+    }
+    &__lun-m{
+        @include sprite($lun-m);
+    }
+    &__bone-m{
+        @include sprite($bone-m);
+    }
+    &__micro-m{
+        @include sprite($micro-m);
+    }
+    &__tooth-m{
+        @include sprite($tooth-m);
+    }
+    &__liver-m{
+        @include sprite($liver-m);
+    }
+    &__pillow-m{
+        @include sprite($pillow-m);
+    }
+    &__eye-m{
+        @include sprite($eye-m);
+    }
+    &__picture-m{
+        @include sprite($picture-m);
+    }
+    &__clock{
+        @include sprite($clock);
+    }
+    &__phone-m{
+        @include sprite($phone-mini);
+    }
+    &__info{
+        @include sprite($info);
+    }
+    &__location{
+        @include sprite($location);
+    }
+    &__vk{
+        @include sprite($vk);
+    }
+    &__fb{
+        @include sprite($fb);
+    }
+    &__ok{
+        @include sprite($ok);
+    }
+    &__inst{
+        @include sprite($inst);
+    }
+}

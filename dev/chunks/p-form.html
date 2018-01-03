@@ -1,0 +1,987 @@
+<div class="form">
+    <input type="hidden" class="js-adress-input"> <!--  тут передається адреса клініки -->
+    <div class="wrap">
+        <form class="form__inner">
+            <a href="#" class="form__close"></a>
+            <div class="form__top">
+                <div class="page-title page-title--blue">Записаться на прием</div>
+                <div class="form-phone">
+                    <i class="icon__phone-m"></i>
+                    <div class="form-phone__title">Или просто позвоните нам по телефону:</div>
+                    <div class="form-phone__phone">+7 (8442) 504-004</div>
+                </div>
+            </div>
+            <ul class="form-pagination">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <div class="form-tab-btns__wrap">
+                <div class="form-tab-btns">
+                    <a href="#" class="js-tab-btn active">Выберите услугу</a>
+                    <a href="#" class="js-tab-btn">Выберите специалиста</a>
+                </div>
+                <div class="form-tab-btns form-tab-btns--step2 form__hide">
+                    <a href="#" class="js-tab-btn active">Вет. кабинет <br>на 7 Ветрах
+                    </a>
+                    <a href="#" class="js-tab-btn">Клиника <br>на Ватутина, 19а
+                    </a>
+                    <a href="#" class="js-tab-btn">Клиника <br>на Огарёва,18
+                    </a>
+                    <a href="#" class="js-tab-btn">Клиника <br>на Энгельса, 29
+                    </a>
+                    <a href="#" class="js-tab-btn">Клиника <br>на Ткачева, 15
+                    </a>
+                </div>
+            </div>
+            <div class="form-tab__container">
+                <div class="datepicker form__hide">
+                    <h3>Выберите дату приема:</h3>
+                    <input type="text" id="datepicker"> <!--  тут передається час -->
+                </div>
+                <div class="form-tab__step1">
+                    <div class="form-tab form-tab__services">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Терапия</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Травматология</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Ортопедия</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Хирургия</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Анализы</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Стоматология</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Эндоскопия</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Визуальная диагностика</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Рентгеноскопия</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>Кастрация</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-servise-input" name="radiob">
+                                    <span>УЗИ</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-tab form-tab__specialist">
+                        <p>Если вы хотите записаться к конкретному специалисту, выберите его из списка</p>
+                        <div class="spec">
+                            <input type="hidden" class="spec__input js-select-input" data-id="" value="" disabled> <!-- сюда передається ім'я лікаря, якщо воно не вибране то інпут вимкнений -->
+                            <div class="spec__current">
+                                <div class="spec__current-photo js-form-photo hide">
+                                    <img src="img/temp/photo-1.jpg" alt="photo">
+                                </div>
+                                <span class="spec__name js-form-name">Выберите специалиста</span>
+                            </div>
+                            <div class="s-drop-list__wrap">
+                                <ul class="s-drop-list scroll-b">
+                                    <li class="s-drop-list__item" data-id="24">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/photo-1.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Алпатова мария Ринатовна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="21">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Нестерова Наталья Владимировна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="5">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/base2.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Алпатова мария Ринатовна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="7546">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/photo-1.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Алпатова мария Ринатовна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="24">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/photo-2.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Нестерова Наталья Владимировна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="24">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/base2.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Алпатова мария Ринатовна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="24">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/base2.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Алпатова мария Ринатовна</div>
+                                    </li>
+                                    <li class="s-drop-list__item" data-id="24">
+                                        <div class="s-drop-list__photo">
+                                            <img src="img/temp/base2.jpg" alt="photo">
+                                        </div>
+                                        <div class="s-drop-list__name">Алпатова мария Ринатовна</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-tab__step2 form__hide">
+                    <div class="form-tab form-tab__times">
+                        <h3>Время приема:</h3>
+                        <ul>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>00:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>01:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>02:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>03:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>04:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>05:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>06:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>07:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>08:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>09:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>10:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>11:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>12:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>13:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>14:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>15:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>16:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>17:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>18:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>19:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>20:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>21:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>22:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:30</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-tab form-tab__times">
+                        <ul>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>00:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>01:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>02:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>03:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>04:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>05:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>06:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>07:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>08:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>09:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>10:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>11:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>12:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>13:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>14:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>15:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>16:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>17:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>18:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>19:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>20:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>21:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>22:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:30</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-tab form-tab__times">
+                        <ul>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>00:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>01:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>02:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>03:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>04:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>05:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>06:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>07:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>08:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>09:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>10:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>11:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>12:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>13:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>14:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>15:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>16:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>17:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>18:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>19:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>20:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>21:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>22:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:30</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-tab form-tab__times">
+                        <ul>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>00:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>01:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>02:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>03:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>04:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>05:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>06:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>07:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>08:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>09:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>10:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>11:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>12:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>13:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>14:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>15:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>16:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>17:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>18:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>19:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>20:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>21:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>22:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:30</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-tab form-tab__times">
+                        <ul>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>00:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>01:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>02:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>03:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>04:00</span>
+                                </label>
+                            </li>
+                            <li class="disabled">
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>05:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>06:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>07:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>08:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>09:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>10:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>11:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>12:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>13:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>14:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>15:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>16:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>17:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>18:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>19:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>20:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>21:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>22:00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" class="input-hidden js-time-input" name="radioTime">
+                                    <span>23:00</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-tab__step3 form__hide">
+                    <h3>Укажите ваши контактные данные</h3>
+                    <input type="text" class="form__input" placeholder="Ваше имя">
+                    <input type="text" class="form__input form__input--phone tel-mask" placeholder="+7 (000) 000-00-00">
+                </div>
+                <a href="#" class="btn btn__prev js-back-btn step-2">Назад</a>
+                <a href="#" class="btn btn--r-arrow js-step-btn step-1 disabled">Далее</a>
+                <button class="btn form__hide js-submit" type="submit">Записаться на прием</button>
+            </div>
+            <div class="form__summary form__hide">
+                <h4>Информация о вашем приеме:</h4>
+                <div class="form__total js-sum-clinik">
+                    <div class="form__total-title">Клиника</div><span></span>
+                </div>
+                <div class="form__total js-sum-doctor js-first-step">
+                    <div class="form__total-title">Врач</div><span></span>
+                </div>
+                <div class="form__total js-sum-service js-first-step">
+                    <div class="form__total-title">Услуга</div><span></span>
+                </div>
+                <div class="form__total js-sum-date">
+                    <div class="form__total-title">Дата</div><span></span>
+                </div>
+                <div class="form__total js-sum-time">
+                    <div class="form__total-title">Время</div><span></span>
+                </div>
+                <div class="reviews__spec">
+                    <div class="reviews__photo"><img src="img/temp/photo-1.jpg" alt="photo"></div>
+                    <div class="reviews__title">
+                        <p>Мы позвоним вам за час, чтобы уточнить что вы придете. Небольшой текст</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+<!--     <div style="background: #fff;">
+        <p class="js-sum-clinik">Клиника<span></span></p>
+        <p class="js-sum-doctor js-first-step">Врач<span></span></p>
+        <p class="js-sum-service js-first-step">Услуга<span></span></p>
+        <p class="js-sum-date">Дата<span></span></p>
+        <p class="js-sum-time">Время<span></span></p>
+    </div> -->
+</div>
